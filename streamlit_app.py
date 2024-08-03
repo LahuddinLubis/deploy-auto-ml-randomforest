@@ -4,7 +4,7 @@ import pandas as pd
 st.title('🎈 Machine Learning App')
 st.info('Prediksi Spesies Penguin dengan Algoritma Random Forest')
 
-// Load dataset
+# Load dataset
 with st.expander('Dataset'):
   st.write('Row Dataset')
   df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
@@ -18,11 +18,11 @@ with st.expander('Dataset'):
   y = df.species
   y
 
-// Data Visualisation
+# Data Visualisation
 with st.expander('Data Visualisation'):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
 
-// Data Preparation
+# Data Preparation
 with st.sidebar:
   st.header('Input Feature (X)')
   island = st.selectbox('Island', ('Biscoe', 'Dream', 'Torgersen'))
