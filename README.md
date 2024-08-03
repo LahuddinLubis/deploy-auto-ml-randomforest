@@ -1,9 +1,7 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Machine Learning App 
 ```
-⬆️ (Replace above with your app's name)
+⬆️ (Machine Learning Algoritma Random Forest)
 ```
-
-Description of the app ...
 
 ## Demo App
 
