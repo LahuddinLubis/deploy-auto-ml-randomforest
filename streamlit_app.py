@@ -1,5 +1,8 @@
 import streamlit as st
+import pandas as pd
 
-st.title('🎈 App Name')
+st.title('🎈 Machine Learning App')
+st.info('Prediksi Spesies Penguin dengan Algoritma Random Forest')
 
-st.write('Hello world!')
+df=pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
+df
