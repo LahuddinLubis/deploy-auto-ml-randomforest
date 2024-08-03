@@ -10,9 +10,9 @@ with st.expander('Dataset'):
   df
 
   st.write('Feature Dataset (X)')
-  X = df.drop('spesies', axis=1)
+  X = df.drop('species', axis=1)
   X
 
   st.write('Label Dataset (y)')
-  y = df.spesies
+  y = df.species
   y
