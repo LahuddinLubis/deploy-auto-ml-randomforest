@@ -54,6 +54,10 @@ target_mapper = {'Adelie': 0,
 def target_encode(val):
   return target_mapper[val]
 
+y = y_row.apply(target_encode)
+y
+y_row
+
 with st.expander("Input Features (X)"):
   st.write("Input Penguin")
   input_df
