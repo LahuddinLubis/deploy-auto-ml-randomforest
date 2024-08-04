@@ -4,8 +4,9 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.title('🤖 Machine Learning App')
-st.info('Prediksi Spesies Penguin dengan Algoritma Random Forest')
+st.info('Prediksi Spesies Penguin dengan Algoritma Random Forest (Referensi:https://www.youtube.com/watch?v=LJ6DcLGQ4vY)')
 
+# Dataset
 with st.expander('Dataset'):
   st.write('**Raw Data**')
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
@@ -19,7 +20,8 @@ with st.expander('Dataset'):
   y_raw = df.species
   y_raw
 
-with st.expander('Data visualization'):
+# Data Visualization
+with st.expander('Data Visualization'):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
 
 # Input Features (X)
@@ -42,7 +44,7 @@ with st.sidebar:
   input_df = pd.DataFrame(data, index=[0])
   input_penguins = pd.concat([input_df, X_raw], axis=0)
 
-with st.expander('Input Features (X)'):
+with st.expander('Input Features'):
   st.write('**Input Penguin**')
   input_df
   st.write('**Combined Penguins Data**')
@@ -66,7 +68,7 @@ def target_encode(val):
 
 y = y_raw.apply(target_encode)
 
-with st.expander('Data preparation'):
+with st.expander('Data Preparation'):
   st.write('**Encoded X (input penguin)**')
   input_row
   st.write('**Encoded y**')
