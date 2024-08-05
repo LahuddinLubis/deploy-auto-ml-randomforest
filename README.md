@@ -1,6 +1,6 @@
-# 📦 Machine Learning App 
+# 📦 Machine Learning App - Algoritma Random Forest
 ```
-⬆️ (Machine Learning Algoritma Random Forest)
+⬆️ (Referensi: https://www.youtube.com/watch?v=LJ6DcLGQ4vY)
 ```
 
 ## Demo App
